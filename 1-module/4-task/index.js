@@ -1,8 +1,6 @@
 function checkSpam(str) {
-  if (str !== undefined && str !== null) {
-          return  (str.toUpperCase().includes('1xBet'.toUpperCase()) || str.toUpperCase().includes('XXX'.toUpperCase()));  
+  if (!str) {
+    return null;
   }
-  else {
-    return null; 
-  };  
+ return  (str.toUpperCase().includes('1xBet'.toUpperCase()) || str.toUpperCase().includes('XXX'.toUpperCase()));  
 }
